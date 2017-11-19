@@ -8,8 +8,10 @@ $(document).ready(function(){
 });
 
 function showTimeLap(){
-	video = document.getElementById("video");
+	var video = document.getElementById("video");
 	$("#timeLap").text((video.currentTime).toFixed(2));
+	var scroll = document.getElementById("scroll");
+	scroll.value = parseInt(video.currentTime);
 }
 
 function respOnBtn(){
@@ -56,7 +58,7 @@ function respOnBtn(){
 		var timeForw = video.currentTime + 15;
 		video.currentTime = timeForw; 
 	});
-	
+
 	video.currentTime = scroll.value;
 	scroll.oninput = function() {
 				video.currentTime = this.value;
