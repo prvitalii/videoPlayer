@@ -1,0 +1,56 @@
+.centeredHor{
+	left: 50%;
+	transform: translateX(-50%);
+}
+.centeredVer{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.controls{
+	position: absolute;
+	width: 600px;
+	height: 50px;
+	top: 350px;
+	background-color: grey;
+}
+#video{
+	position: relative;
+	top: 50px;
+	width: 600px;
+	height: 338px;
+	border: 2px solid grey;
+
+}
+#scroll{
+	width: 437px;
+	float: right;
+	margin: 0px 5px;
+}
+.btn{
+	display: inline-block;
+	height: 40px;
+	width: 30px;
+	margin: 0px 2px;
+	background-color: blue;
+	border-radius: 5px;
+	line-height: 40px;
+	text-align: center;
+}
+.btn:hover, #scroll:hover{
+	background-color: green;
+	cursor: pointer;
+}
+.controls div:nth-child(2){
+	margin-left: 7px;
+}
+#timeLap{
+	position: absolute;
+	width: 50px;
+	height: 30px;
+	top: -30px;
+	right: 0px;
+	background-color: purple;
+	line-height: 30px;
+	text-align: center;
+}

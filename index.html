@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>videoPlayer</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="libs/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+</head>
+<body>
+	<video id="video" class="centeredHor" poster="libs/teslaPic.png">
+		<source src="libs/tesla.mp4">
+	</video>
+	<div class="controls centeredHor">
+		<input id="scroll" class="centeredVer" type="range" min="0" max="79" step="5" value="0">
+		<div class="btn centeredVer" data-val="play"><i class="fa fa-play"></i></div>
+		<div class="btn centeredVer" data-val="stop"><i class="fa fa-stop"></i></div>
+		<div class="btn centeredVer" data-val="backward"><i class="fa fa-step-backward"></i></div>
+		<div class="btn centeredVer" data-val="forward"><i class="fa fa-step-forward"></i></div>
+		<div id="timeLap"></div>
+	</div>
+</body>
+</html>
